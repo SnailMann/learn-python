@@ -6,6 +6,7 @@ Quick Sort
 
 
 def quick_sort(num, left, right):
+    # 递归出口
     if left >= right:
         return
 
@@ -13,6 +14,7 @@ def quick_sort(num, left, right):
     p2 = right
     base_num = num[left]
 
+    # 比较算法
     while p2 > p1:
         while p2 > p1 and num[p2] >= base_num:
             p2 -= 1
@@ -22,6 +24,7 @@ def quick_sort(num, left, right):
         num[p2] = num[p1]
     num[p1] = base_num
 
+    # 递归
     quick_sort(num, left, p1 - 1)
     quick_sort(num, p1 + 1, right)
 

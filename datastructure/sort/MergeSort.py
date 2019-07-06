@@ -6,9 +6,11 @@ Merge Sort
 
 
 def merge_sort(num, left, right):
+    # 递归出口
     if left >= right:
         return
 
+    # 递归
     mid = (left + right) // 2
     merge_sort(num, left, mid)
     merge_sort(num, mid + 1, right)
@@ -17,6 +19,7 @@ def merge_sort(num, left, right):
     p2 = mid + 1
     temp_array = []
 
+    # 合并算法
     while p1 <= mid and p2 <= right:
         if num[p1] <= num[p2]:
             temp_array.append(num[p1])
@@ -28,7 +31,6 @@ def merge_sort(num, left, right):
     while p1 <= mid:
         temp_array.append(num[p1])
         p1 += 1
-
     while p2 <= right:
         temp_array.append(num[p2])
         p2 += 1
