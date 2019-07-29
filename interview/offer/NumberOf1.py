@@ -44,7 +44,7 @@ class NumberOf1:
         3. 所以每次循环，每次num都去掉一个最右边的一个1。直到num = 0，无1可去退出循环
         """
         count = 0
-        while num:
+        while num & 31:
             count += 1
             num = (num - 1) & num
         print(count)
@@ -92,6 +92,7 @@ class NumberOfMAndN:
 
 
 if __name__ == '__main__':
-    NumberOf1.method3(10)
-    NumberOf2Power.method1(16)
-    NumberOfMAndN.methon1(10, 13)
+    NumberOf1.method2(-10)
+    NumberOf1.method3(-10)
+    # NumberOf2Power.method1(16)
+    # NumberOfMAndN.methon1(10, 13)
