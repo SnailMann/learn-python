@@ -37,6 +37,7 @@ class MinCostClimbingStairs:
             a = b
             b = c
 
+        # 最后的比较，是n-2阶时跨两阶到楼顶，和n-1阶跨一阶到楼顶，楼顶没有cost，所以这里不需要加上cost
         return min(a, b)
 
     @staticmethod
