@@ -53,3 +53,4 @@ if __name__ == '__main__':
     cost = [1, 100, 1, 1, 1, 100, 1, 1, 100, 1]
     result = MinCostClimbingStairs.minCostClimbingStairs(cost)
     print(result)
+
