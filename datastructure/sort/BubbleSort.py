@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 Bubbule Sort 冒泡算法
 时间复杂度平均为O(n^2)

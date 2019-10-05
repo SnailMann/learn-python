@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 Direct Insert Sort
 直接插入排序

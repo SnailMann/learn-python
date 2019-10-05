@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 Select Sort
 选择排序

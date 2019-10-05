@@ -1,3 +1,4 @@
+# coding=utf-8
 """
 Quick Sort
 快速排序
